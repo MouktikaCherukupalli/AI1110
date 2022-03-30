@@ -1,0 +1,42 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{polynom}
+\usepackage{times}
+\title{Assignment 1}
+\author{ai21btech11007 }
+\date{March 2022}
+\polyset{%
+  style=C,
+  }
+
+\begin{document}
+
+\maketitle
+
+By the factor theorem if $f(a)=0$,then $x-a$ will be factor of f(x)
+\\let the given polynomial be f(x)
+   \\$f(x)=x^3+x^2-4x-4$
+   \\$f(2)=2^3+2^2-4*2-4$
+   \\    $f(2)=0$
+   \\so,x-2 is a factor of f(x),now to factorise f(x) 
+  \[
+    \polylongdiv{x^3+x^2-4x-4}{x-2}
+  \]
+  \\we get $x^2+3x+2$
+  \\which is a quadratic expression so we can factorise it further by finding it's roots
+  \\roots are 
+  \[ \frac{-b \pm \sqrt{b^2-4\times a\times c}}{2\times a} \]
+  \\here { $b= 3$,
+           $a=1$,
+           $c=2$ }
+ \\so roots would be
+   \[ \frac{-3 \pm \sqrt{3^2-4\times 1\times 2}}{2\times 1} \]
+   \\ -1 and -2 are roots
+   \\so other two factors are
+  \\$x+1$ and $x+2$
+  \\the final factors are 
+  \\$x+1$,$x-2$ and $x+2$
+
+$f(x)=( x+1)\times( x-2)\times( x+2)$
+
+\end{document}
